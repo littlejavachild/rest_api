@@ -58,3 +58,25 @@ You can set 3 environment variables `MONGODB_URI`, `VERSION`, and `PORT`. By def
 ### With ngrok  
 
 ## Usage  
+
+### Creating a product
+
+To create a product, execute the following `curl` command:
+
+    curl -H "Authorization: Bearer Ym9zY236Ym9zY28=" localhost:8080/v1/product/ -d '{"title":"Nike Shoes","category":"shoes","price":100,"quantity":4,"status":5}'  
+    
+Response:  
+
+    {
+        "success": true,
+        "code": 201,
+        "result": {
+            "__v": 0,
+            "title": "Nike Shoes",
+            "category": "shoes",
+            "price": 100,
+            "quantity": 4,
+            "status": 5,
+            "_id": "581b6214f49e0c347657ae13"
+        }
+    }
