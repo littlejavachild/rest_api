@@ -1,0 +1,17 @@
+{
+  "name": "rest_api",
+  "version": "1.0.0",
+  "description": "programming assignment by wingify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fasih",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0",
+    "mongoose": "^4.6.5",
+    "path-to-regexp": "^1.6.0",
+    "q": "^1.4.1"
+  }
+}
