@@ -10,8 +10,8 @@
 3. Usage  
   i. Creating a product  
   ii. Retrieving a product  
-  iii. Deleting a product  
-  iv. Updating a product
+  iii. Updating a product  
+  iv. Deleting a product
 4. Testing  
 
 ## Introduction  
@@ -79,4 +79,44 @@ Response:
             "status": 5,
             "_id": "581b6214f49e0c347657ae13"
         }
+    }
+
+### Retrieving a product  
+
+Taking note of the `_id` from the previous request, execute the following `curl` command to retrieve the product:  
+
+    curl -H "Authorization: Bearer Ym9zY236Ym9zY28=" localhost:8080/v1/product/581b6214f49e0c347657ae13  
+    
+Response:  
+
+    {
+      "success": true,
+      "code": 200,
+      "result": {
+          "_id": "581b6214f49e0c347657ae13",
+          "title": "Nike Shoes",
+          "category": "shoes",
+          "price": 100,
+          "quantity": 4,
+          "status": 5,
+          "__v": 0
+      }
+    }  
+
+### Updating a product  
+### Deleting a product  
+
+To delete the product, execute the following `curl` command:  
+
+    curl -X DELETE -H "Authorization: Bearer Ym9zY236Ym9zY28=" localhost:8080/v1/product/581b6214f49e0c347657ae13  
+    
+Response:  
+
+    {
+      "success": true,
+      "code": 200,
+      "result": {
+          "ok": 1,
+          "n": 1
+      }
     }
