@@ -14,17 +14,16 @@ module.exports = function(request,response,db){
             let _403 = require("./_403");
             _403(request,response);
         }else{
-            let savedProduct = yield* get(id,db);
 
-            response.writeHead(200,{
-                "Content-Type" : "application/json"
-            });
+            // refer: https://nodejs.org/api/http.html#http_message_url
+            // refer: https://nodejs.org/api/url.html#url_url_parse_urlstring_parsequerystring_slashesdenotehost
+            let parsed = url.parse(request.url,true);
 
-            response.end(JSON.stringify({
-                success : true,
-                code: 200,
-                result : savedProduct
-            }));
+            // remember to parse the strings to numbers
+            
+
+            yield db.search(parsed.query);
+            response.end();
         }
     }).catch((e)=>{
         console.error( e );
@@ -34,8 +33,6 @@ module.exports = function(request,response,db){
 
 //--------------------------------------------------------------------
 
-function* get(id,db){
-    return yield db.get(id);
-}
+
 
 //--------------------------------------------------------------------

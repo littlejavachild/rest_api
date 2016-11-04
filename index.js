@@ -14,6 +14,7 @@ router.addRoute("get",`/${version}/ping`,require(`./${version}/ping`));
 router.addRoute("get",`/${version}/product/:id`,require(`./${version}/get_product`));
 router.addRoute("post",`/${version}/product/`,require(`./${version}/add_product`));
 router.addRoute("delete",`/${version}/product/:id`,require(`./${version}/remove_product`));
+router.addRoute("get",`/${version}/search(\\?+)(.*)`,require(`./${version}/search_product`));
 
 let db = new Database();
 
