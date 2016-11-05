@@ -1,18 +1,18 @@
 # Assignment  
 1. Introduction  
-  i. Assumptions  
-  ii. Endpoints  
-  iii. Approach  
+  [i. Assumptions](https://github.com/littlejavachild/rest_api#assumptions)  
+  [ii. Endpoints](https://github.com/littlejavachild/rest_api#endpoints)  
+  [iii. Approach](https://github.com/littlejavachild/rest_api#approach)  
 2. Running  
-  i. Locally  
-  ii. On Heroku  
-  iii. With ngrok  
+  [i. Locally](https://github.com/littlejavachild/rest_api#locally)  
+  [ii. On Heroku](https://github.com/littlejavachild/rest_api#on-heroku)  
+  [iii. With ngrok](https://github.com/littlejavachild/rest_api#with-ngrok)  
 3. Usage  
-  i. Creating a product  
-  ii. Retrieving a product  
-  iii. Updating a product  
-  iv. Deleting a product  
-  v. Searching a product
+  [i. Creating a product](https://github.com/littlejavachild/rest_api#creating-a-product)  
+  [ii. Retrieving a product](https://github.com/littlejavachild/rest_api#retrieving-a-product)  
+  [iii. Updating a product](https://github.com/littlejavachild/rest_api#updating-a-product)  
+  [iv. Deleting a product](https://github.com/littlejavachild/rest_api#deleting-a-product)  
+  [v. Searching a product](https://github.com/littlejavachild/rest_api#searching-a-product)
 4. Testing  
 
 ## Introduction  
