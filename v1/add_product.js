@@ -32,8 +32,8 @@ module.exports = function(request,response,db){
         }
     }).catch((e)=>{
         console.log( e );
-        // todo: 400 bad request
-        response.end();
+        let _400 = require("./_400");
+        _400(request,response,db);
     });
 };
 
