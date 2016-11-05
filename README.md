@@ -56,6 +56,10 @@ Assuming you have NodeJS and MongoDB installed,
 
 You can set 3 environment variables `MONGODB_URI`, `VERSION`, and `PORT`. By default, the API attempts to connect to a local instance of MongoDB on the standard port and mounts the `v1` of the API on port 8080.  
 
+Or, you can execute the following command to install and run the server using the [`install.sh`](https://github.com/littlejavachild/rest_api/blob/master/extra/install.sh) script:  
+
+    curl -s https://raw.githubusercontent.com/littlejavachild/rest_api/master/extra/install.sh | bash
+
 ### On Heroku  
 
 Assuming you have Heroku toolbelt installed,  
