@@ -239,4 +239,13 @@ Response:
                   "__v": 0
               }
           ]
-      }
+      }  
+      
+## Testing  
+
+The assignment includes a series of **non exhaustive** tests that partially test the endpoint to add a product. Assuming you have the server running locally, to run the tests,  
+ 
+1. Open a terminal and navigate into the repo.  
+2. Install [`jasmine-node`](https://github.com/mhevery/jasmine-node) by executing `npm install -g jasmine-node`.  
+3. Install the dev dependencies with `npm install --dev`.  
+4. Run the tests `npm test`.
