@@ -122,6 +122,23 @@ Response:
     }  
 
 ### Updating a product  
+
+To update a product, execute the following `curl` command:  
+
+    curl -H "Authorization: Bearer Ym9zY236Ym9zY28=" "localhost:8080/v1/product/581c9d641ca1f215cd8382fc" -X PUT -d '{"quantity":5}'  
+    
+Response:  
+
+    {
+        "success": true,
+        "code": 200,
+        "result": {
+            "ok": 1,
+            "nModified": 1,
+            "n": 1
+        }
+    }
+
 ### Deleting a product  
 
 To delete the product, execute the following `curl` command:  
