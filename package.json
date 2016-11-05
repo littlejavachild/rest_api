@@ -4,8 +4,8 @@
   "description": "programming assignment by wingify",
   "main": "index.js",
   "scripts": {
-    "start" : "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "jasmine-node test/v1/"
   },
   "author": "fasih",
   "license": "ISC",
@@ -14,5 +14,8 @@
     "mongoose": "^4.6.5",
     "path-to-regexp": "^1.6.0",
     "q": "^1.4.1"
+  },
+  "devDependencies": {
+    "frisby": "^0.8.5"
   }
 }
