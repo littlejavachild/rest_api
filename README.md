@@ -30,7 +30,7 @@ There are 5 endpoints.
 `GET /v1/product/:id` to get information about a specific product.  
 `POST /v1/product/` to insert a new product into the database.  
 `DELETE /v1/product/:id` to delete a specific product.  
-`PUT /v1/product/:id` to update a specific product. 
+`PUT /v1/product/:id` to update a specific product.  
 `GET /v1/search` to search for products.
 
 ### Approach
@@ -56,6 +56,10 @@ Assuming you have NodeJS and MongoDB installed,
 
 You can set 3 environment variables `MONGODB_URI`, `VERSION`, and `PORT`. By default, the API attempts to connect to a local instance of MongoDB on the standard port and mounts the `v1` of the API on port 8080.  
 
+Or, you can execute the following command to install and run the server using the [`install.sh`](https://github.com/littlejavachild/rest_api/blob/master/extra/install.sh) script:  
+
+    curl -s https://raw.githubusercontent.com/littlejavachild/rest_api/master/extra/install.sh | bash
+
 ### On Heroku  
 
 Assuming you have Heroku toolbelt installed,  
@@ -66,6 +70,10 @@ Assuming you have Heroku toolbelt installed,
 4. Once the app is successfully created, the `heroku` remote will be added to the git repo.  
 5. Execute the following command to add an `mLab` MongoDB instance: `heroku addons:create mongolab`.  
 6. Push the code to Heroku using `git push heroku master`.
+
+An instance of the API is already hosted on https://wingifyrest.herokuapp.com/. To check the connectivity, execute the following `curl` command:  
+
+    curl https://wingifyrest.herokuapp.com/v1/ping
 
 ### With ngrok  
 
