@@ -30,7 +30,7 @@ There are 5 endpoints.
 `GET /v1/product/:id` to get information about a specific product.  
 `POST /v1/product/` to insert a new product into the database.  
 `DELETE /v1/product/:id` to delete a specific product.  
-`PUT /v1/product/:id` to update a specific product. 
+`PUT /v1/product/:id` to update a specific product.  
 `GET /v1/search` to search for products.
 
 ### Approach
@@ -70,6 +70,10 @@ Assuming you have Heroku toolbelt installed,
 4. Once the app is successfully created, the `heroku` remote will be added to the git repo.  
 5. Execute the following command to add an `mLab` MongoDB instance: `heroku addons:create mongolab`.  
 6. Push the code to Heroku using `git push heroku master`.
+
+An instance of the API is already hosted on https://wingifyrest.herokuapp.com/. To check the connectivity, execute the following `curl` command:  
+
+    curl https://wingifyrest.herokuapp.com/v1/ping
 
 ### With ngrok  
 
