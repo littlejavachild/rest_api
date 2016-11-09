@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Check if nodejs is installed
 if ! type node > /dev/null
 then
